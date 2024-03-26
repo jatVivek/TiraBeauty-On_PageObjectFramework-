@@ -1,0 +1,7 @@
+{
+  "name": "TiraBeauty",
+  "version": "1.0.0",
+  "devDependencies": {
+    "cypress": "*"
+  }
+}
