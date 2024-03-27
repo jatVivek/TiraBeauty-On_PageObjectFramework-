@@ -21,7 +21,9 @@ class TestCase07{
                    productContainers.ManArden7XHydraSportBeardOil().should('be.visible').then(()=>{
                        productContainers.ManArden7XHydraSportBeardOil().click().then(()=>{
                            pdp.addToCartButton().should('be.visible').then(()=>{
-                               pdp.addToCartButton().click();
+                               others.Wait().then(()=>{
+                                   pdp.addToCartButton().click();
+                               })
                            })
                            })
                        })

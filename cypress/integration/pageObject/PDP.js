@@ -8,5 +8,11 @@ class PDP{
     addToCartButton(){
         return cy.get('.bag-btn-main > div > .custom-btn');
     }
+    cartButton(){
+        return cy.get('.wishlist-icon > .profile-icons > img')
+    }
+    pickingPrice(){
+        return cy.get('.current-amount');
+    }
 }
 export default PDP;
