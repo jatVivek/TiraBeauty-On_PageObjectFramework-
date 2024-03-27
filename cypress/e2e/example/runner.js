@@ -6,6 +6,8 @@ import TestCase05 from "../../integration/testCases/TestCase05";
 import TestCase06 from "../../integration/testCases/TestCase06";
 import TestCase07 from "../../integration/testCases/TestCase07";
 import TestCase08 from "../../integration/testCases/TestCase08";
+import TestCase09 from "../../integration/testCases/TestCase09";
+import TestCase10 from "../../integration/testCases/TestCase10";
 describe('Test Suite', () => {
     // it('First Test Case', () => {
     //     const firstTestCase = new TestCase01();
@@ -35,8 +37,16 @@ describe('Test Suite', () => {
     //     const testCase07 = new TestCase07();
     //     testCase07.testCase07();
     // });
-    it('Test Case No.8', () => {
-        const testCase08 = new TestCase08();
-        testCase08.testCase08();
+    // it('Test Case No.8', () => {
+    //     const testCase08 = new TestCase08();
+    //     testCase08.testCase08();
+    // });
+    // it('Test Case No.9', () => {
+    //     const testCase09 = new TestCase09();
+    //     testCase09.testCase09();
+    // });
+    it('Test Case No.10', () => {
+        const testCase10 = new TestCase10();
+        testCase10.testCase10();
     });
 });
