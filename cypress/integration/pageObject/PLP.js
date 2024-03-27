@@ -20,5 +20,11 @@ class PLP{
     gettingCategoryTitle(){
         return cy.get('.product-title-text');
     }
+    productContainers(){
+        return cy.get(':nth-child(1) > .product-wrap > .product-wrapper > .product-card');
+    }
+    gettingProductPACSmallPizzaPuff3Pcs(){
+        return cy.contains('PAC Small Pizza Puff - (3Pcs)');
+    }
 }
 export default PLP;

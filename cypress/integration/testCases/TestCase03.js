@@ -1,19 +1,20 @@
 import Others from "../others/Others";
 import HomePage from "../pageObject/HomePage";
 
-class TestCase03{
-    testCase03(){
+class TestCase03 {
+    testCase03() {
         const others = new Others();
-        const homePage= new HomePage();
-        cy.log('Opening URL')
+        const homePage = new HomePage();
+
+        cy.log('Opening URL');
         others.WebURL();
-        cy.log('Navigating to What new section').then(() =>{
-            homePage.What_sNew().should('be.visible').then(() =>{
-                homePage.What_sNew().click().then(() =>{
-                    cy.url().should('eq', 'https://www.tirabeauty.com/sections/');
-                })
-            })
-        })
+
+        cy.log('Navigating to What\'s New section').then(() => {
+            homePage.What_sNew().should('be.visible').click().then(() => {
+                cy.url().should('include', '/sections/').and('include', 'What_sNew');
+            });
+        });
     }
 }
+
 export default TestCase03;

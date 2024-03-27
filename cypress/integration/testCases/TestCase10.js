@@ -29,7 +29,7 @@ class TestCase10 {
                                     cy.log('Scrolling to the top of the page');
                                     cy.scrollTo('top');
                                     cy.log('Verifying Selected Category');
-                                    plp.gettingCategoryTitle().should('include', 'Mens Perfumes (EDT & EDP)');
+                                    plp.gettingCategoryTitle().invoke('text').should('include', 'Mens Perfumes (EDT & EDP)');
                                 });
                             });
                         });

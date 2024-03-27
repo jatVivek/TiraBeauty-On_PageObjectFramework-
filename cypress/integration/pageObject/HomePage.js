@@ -11,6 +11,9 @@ class HomePage{
     searchButton(){
         return cy.get('#search');
     }
+    tools_Appliances(){
+        return cy.get('#app > div > div > div.ct-header-wrapper > div > div.desktop-header-container.no-tap-highlight.stop-user-select > div.desktop-header > div.sub-header-container > div > div > div:nth-child(9) > div > div > a');
+    }
 
 }
 export default HomePage;

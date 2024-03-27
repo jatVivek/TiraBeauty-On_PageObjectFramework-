@@ -13,7 +13,12 @@ class TestCase02 {
         homePage.hairCategoryButton().should('be.visible').click();
 
         cy.log('Validating navigation');
-        cy.url().should('include', 'sections/hair');
+        cy.url().should('include', 'sections/hair').timeout(10000).then((url) => {
+            cy.log('URL includes the expected path: ' + url);
+        }).catch((error) => {
+            cy.log('URL does not include the expected path');
+            throw new Error('Navigation validation failed');
+        });
     }
 }
 
